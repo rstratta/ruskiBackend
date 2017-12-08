@@ -1,0 +1,333 @@
+{
+	"id": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+	"name": "ruski",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Actuator",
+			"description": "",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"order": [
+				"845495c5-2658-15ea-4703-5ba2a30a99ea",
+				"a5ae2391-ab25-a4ff-e352-fb4a43dbec2c"
+			],
+			"owner": "1049310",
+			"folders_order": [],
+			"id": "0daa6780-f80a-6231-3111-3ed23843136e"
+		},
+		{
+			"name": "PlanManager",
+			"description": "",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"order": [
+				"c5cef587-b61b-745d-38ca-226f8f7fa791",
+				"3c8a6b76-cd73-010a-8430-62b3b892b16e"
+			],
+			"owner": "1049310",
+			"folders_order": [],
+			"id": "13d55862-af8a-2545-f163-d07a6d9720f9"
+		},
+		{
+			"name": "Supplying",
+			"description": "",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"order": [
+				"5ff97064-c64b-1911-5cf9-c720a89010b4",
+				"826feb89-a88b-7468-54e1-3ea71062a243",
+				"5a9ed1f2-5f5a-b1cc-93a6-3018249f12dd",
+				"32f4068a-5234-d40e-3b30-1dd0660efac9",
+				"114553bb-7eb6-233f-0de1-c615e9c489f8"
+			],
+			"owner": "1049310",
+			"folders_order": [],
+			"id": "e95a0510-a608-15bc-2b04-28912cbb69a8"
+		}
+	],
+	"folders_order": [
+		"e95a0510-a608-15bc-2b04-28912cbb69a8",
+		"13d55862-af8a-2545-f163-d07a6d9720f9",
+		"0daa6780-f80a-6231-3111-3ed23843136e"
+	],
+	"timestamp": 1510512159450,
+	"owner": "1049310",
+	"public": false,
+	"requests": [
+		{
+			"id": "114553bb-7eb6-233f-0de1-c615e9c489f8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/Supplying-war/webresources/orders/44884003-3a4a-4a12-a5a9-0d0b21caf806",
+			"folder": "e95a0510-a608-15bc-2b04-28912cbb69a8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1510717911709,
+			"name": "Remove",
+			"description": "",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"responses": [],
+			"rawModeData": "",
+			"collection_id": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"isLastRequest": true
+		},
+		{
+			"id": "32f4068a-5234-d40e-3b30-1dd0660efac9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/Supplying-war/webresources/orders",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510512461084,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"isFromCollection": true,
+			"folder": "e95a0510-a608-15bc-2b04-28912cbb69a8",
+			"rawModeData": "{\"clientId\":123,\"volume\":\"10\",\"servicePointId\":\"11\",\"billingCloseday\":\"20\"}",
+			"collection_id": "bc251d3c-7373-45bd-92dd-b2e3a672194c"
+		},
+		{
+			"id": "3c8a6b76-cd73-010a-8430-62b3b892b16e",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/Planner-war/webresources/plansManager/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8080/Planner-war/webresources/plansManager/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511647907742,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"folder": "13d55862-af8a-2545-f163-d07a6d9720f9",
+			"collection_id": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"isFromCollection": true,
+			"collectionRequestId": "3c8a6b76-cd73-010a-8430-62b3b892b16e"
+		},
+		{
+			"id": "5a9ed1f2-5f5a-b1cc-93a6-3018249f12dd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/Supplying-war/webresources/orders",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get by id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510512461084,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"isFromCollection": true,
+			"folder": "e95a0510-a608-15bc-2b04-28912cbb69a8",
+			"rawModeData": "{\"clientId\":123,\"volume\":\"10\",\"servicePointId\":\"11\",\"billingCloseday\":\"20\"}",
+			"collection_id": "bc251d3c-7373-45bd-92dd-b2e3a672194c"
+		},
+		{
+			"id": "5ff97064-c64b-1911-5cf9-c720a89010b4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/Supplying-war/webresources/orders",
+			"folder": "e95a0510-a608-15bc-2b04-28912cbb69a8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1511125524024,
+			"name": "POST Order",
+			"description": "",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"responses": [],
+			"rawModeData": "{\"clientId\":458,\"volume\":\"50\",\"servicePointId\":\"10\",\"billingCloseday\":\"25\"}",
+			"collection_id": "bc251d3c-7373-45bd-92dd-b2e3a672194c"
+		},
+		{
+			"id": "826feb89-a88b-7468-54e1-3ea71062a243",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/Supplying-war/webresources/orders",
+			"folder": "e95a0510-a608-15bc-2b04-28912cbb69a8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1510713748822,
+			"name": "Get all",
+			"description": "",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"responses": [],
+			"rawModeData": "{\"clientId\":123,\"volume\":\"10\",\"servicePointId\":\"11\",\"billingCloseday\":\"20\"}",
+			"collection_id": "bc251d3c-7373-45bd-92dd-b2e3a672194c"
+		},
+		{
+			"id": "845495c5-2658-15ea-4703-5ba2a30a99ea",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/Goliath-war/webresources/actuators/program",
+			"folder": "e95a0510-a608-15bc-2b04-28912cbb69a8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511853756823,
+			"name": "POST Execute Program",
+			"description": "",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"responses": [],
+			"rawModeData": "{\"commands\":[{\"ActuatorId\":\"081092e3-e0e4-432c-bcf3-7ad2b9e5fde3\",\"commandasToExecute\":[\"DISABLE\"]}]}"
+		},
+		{
+			"id": "a5ae2391-ab25-a4ff-e352-fb4a43dbec2c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/Goliath-war/webresources/actuators",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511897997072,
+			"name": "http://localhost:8080/Goliath-war/webresources/actuators",
+			"description": "",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"responses": [],
+			"rawModeData": "{\"id\":\"\",\"name\":\"Valvula Alen\",\"commands\":[\n\t{\"command\":\"TURN_ON\",\n\t\t\"jarToExecute\" : \"c:/temp/Alen.jar\",\n\t\t\"classToExecute\":\"com.alen.driver\",\n\t\t\"methodToExecute\":\"prender\"\n\t},\n\t\t{\"command\":\"TURN_OFF\",\n\t\t\"jarToExecute\" : \"c:/temp/Alen.jar\",\n\t\t\"classToExecute\":\"com.alen.driver\",\n\t\t\"methodToExecute\":\"apagar\"\n\t},\n\t\t{\"command\":\"SET_TIMER\",\n\t\t\"jarToExecute\" : \"c:/temp/Alen.jar\",\n\t\t\"classToExecute\":\"com.alen.driver\",\n\t\t\"methodToExecute\":\"cambiarTiempo\",\n\t\t\"methodParam\" : \"3\"\n\t},\n\t\t{\"command\":\"SET_LEVEL\",\n\t\t\"jarToExecute\" : \"c:/temp/Alen.jar\",\n\t\t\"classToExecute\":\"com.alen.driver\",\n\t\t\"methodToExecute\":\"cambiarNivel\",\n\t\t\"methodParam\" : \"1,123\"\n\t},\n\t\t{\"command\":\"ENABLE\",\n\t\t\"jarToExecute\" : \"c:/temp/Alen.jar\",\n\t\t\"classToExecute\":\"com.alen.driver\",\n\t\t\"methodToExecute\":\"habilitado\",\n\t\t\"methodParam\" : \"2018-04-23T18:25:43.511\"\n\t},\n\t\t{\"command\":\"DISABLE\",\n\t\t\"jarToExecute\" : \"c:/temp/Alen.jar\",\n\t\t\"classToExecute\":\"com.alen.driver\",\n\t\t\"methodToExecute\":\"deshabilitado\",\n\t\t\"methodParam\" : \"2018-04-23T18:25:43.511\"\n\t}\n\t]}"
+		},
+		{
+			"id": "c5cef587-b61b-745d-38ca-226f8f7fa791",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/Planner-war/webresources/plansManager",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1511647914971,
+			"name": "http://localhost:8080/Planner-war/webresources/planManager",
+			"description": "",
+			"collectionId": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"responses": [],
+			"collection_id": "bc251d3c-7373-45bd-92dd-b2e3a672194c",
+			"folder": "13d55862-af8a-2545-f163-d07a6d9720f9",
+			"isFromCollection": true,
+			"collectionRequestId": "c5cef587-b61b-745d-38ca-226f8f7fa791"
+		}
+	]
+}

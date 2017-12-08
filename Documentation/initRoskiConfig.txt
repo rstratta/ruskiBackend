@@ -1,0 +1,15 @@
+create-jdbc-connection-pool --datasourceclassname org.apache.derby.jdbc.ClientDataSource --restype javax.sql.DataSource --property portNumber=1527:password=supplying:user=supplying:serverName=localhost:databaseName=supplyingDB:connectionAttributes=\;create\\=true supplying_pool
+
+create-jdbc-resource --connectionpoolid supplying_pool jdbc/jee-supplyingDB-pool
+create-jdbc-connection-pool --datasourceclassname org.apache.derby.jdbc.ClientDataSource --restype javax.sql.DataSource --property portNumber=1527:password=planner:user=planner:serverName=localhost:databaseName=plannerDB:connectionAttributes=\;create\\=true planner_pool
+create-jdbc-resource --connectionpoolid planner_pool jdbc/jee-plannerDB-pool
+
+create-jdbc-connection-pool --datasourceclassname org.apache.derby.jdbc.ClientDataSource --restype javax.sql.DataSource --property portNumber=1527:password=goliath:user=goliath:serverName=localhost:databaseName=goliathDB:connectionAttributes=\;create\\=true goliath_pool
+create-jdbc-resource --connectionpoolid goliath_pool jdbc/jee-goliathDB-pool
+
+create-jms-resource --restype javax.jms.ConnectionFactory jms/ConnectionFactory
+create-jms-resource --restype javax.jms.Topic --property Name=Topic jms/supplyingTopic
+create-jms-resource --restype javax.jms.Queue --property Name=supplyingQueue jms/supplyingQueue
+create-jms-resource --restype javax.jms.Queue --property Name=pipelineQueue jms/pipelineQueue
+
+create-jdbc-resource --connectionpoolid goliath_pool jdbc/jee-goliathDB-pool

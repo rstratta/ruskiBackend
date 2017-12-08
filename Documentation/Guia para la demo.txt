@@ -1,0 +1,51 @@
+1 -
+Encriptar, aplicación origen supplyingFrontend, aplicación destino supplying
+{"clientId":1234,"volume":"50","servicePointId":"10","billingCloseday":"25"}
+Verificar:
+select * from orders => nueva orden
+select * from plans => nuevo plan
+select * from sections => se agregaron secciones
+
+2 -
+Para la orden creada anteriormente, tomar el id de la misma:
+Se puede usar el GetAll para acceder a todas las órdenes generadas
+
+Encriptar json, notar que se modifican cualquier dato menos el servicePointId, por lo que las secciones deben permanecer persistidas.
+
+{"id": "d83c4cb3-334f-4709-ad83-ed1a820dc760","clientId": 458,"dateFrom": "Nov 29, 2017 1:23:20 AM","volume": 36,"servicePointId": 6,"billingCloseday": 24,"deleted": false}
+
+3 -
+Volver a editar la órden, ahora cambiando el servicePointId
+Esperamos que las secciones sean recalculadas
+{"id": "a166fe44-3a39-4b72-a7d6-73be110f4f78","clientId": 456,"dateFrom": "Nov 28, 2017 10:23:13 PM","volume": 28,"servicePointId": 4,"billingCloseday": 10,"deleted": false}
+
+4 -
+Eliminar orden, se espera que se elimine también el plan
+
+5 - 
+Obtener por Id: buscar el plan eliminado, ver el resultado en postman
+
+6 -
+Planes pendientes de aprobación, 
+Consultar los planes pendientes de aprobación (ver estado)
+
+7 - Confirmar plan:
+Invocar la confirmación de un plan y ejecutar el punto anterior, este ya no está pendiente de confirmación
+
+8 - 
+Agregar actuadores
+
+Encriptar el siguiente json para aplicacion de origen goliathFrontend y aplicaciónDestino goliath
+
+{"id":"","name":"Valvula Alen","commands":[{"command":"TURN_ON","jarToExecute" : "c:/temp/Alen.jar","classToExecute":"com.alen.Driver","methodToExecute":"prender"},{"command":"TURN_OFF","jarToExecute" : "c:/temp/Alen.jar","classToExecute":"com.alen.Driver","methodToExecute":"apagar"},{"command":"SET_TIMER","jarToExecute" : "c:/temp/Alen.jar","classToExecute":"com.alen.Driver","methodToExecute":"cambiarTiempo","methodParam" : "3"},{"command":"SET_LEVEL","jarToExecute" : "c:/temp/Alen.jar","classToExecute":"com.alen.Driver","methodToExecute":"cambiarNivel","methodParam" : "1,123"},{"command":"ENABLE","jarToExecute" : "c:/temp/Alen.jar","classToExecute":"com.alen.Driver","methodToExecute":"habilitado","methodParam" : "2018-04-23 18:25:43 yyyy-MM-dd HH:mi:ss "},{"command":"DISABLE","jarToExecute" : "c:/temp/Alen.jar","classToExecute":"com.alen.Driver","methodToExecute":"deshabilitado","methodParam" :"2018-04-23 18:25:43"}]}
+
+Verificar, las tablas:
+actuators y actuatorcommands 
+
+
+9 - 
+Ejecutar comandos, 
+Antes de encriptar, verificar que las librerias decladas en el punto anterior se encuentran en la ruta especificada.
+
+Encriptar el siguiente json para app origen goliathFrontend y app destino goliath (actualizar el actuatorId)
+{"commands":[{"actuatorId":"fc92644d-d9e5-4cc5-b545-cacdcb65d071","commandasToExecute":["ENABLE"]}]}
